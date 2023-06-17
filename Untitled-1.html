@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+    body {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 25px;
+    }
+
+    h1 {
+        color: red;
+    }
+
+</style>
+<script>
+function myFunction() {
+    var1=document.getElementById('1Num').value;
+    op1=document.getElementById('operation1').value;
+    var2=document.getElementById('2Num').value;
+    op2=document.getElementById('operation2').value;
+    var3=document.getElementById('3Num').value;
+    Equation=var1+op1+var2+op2+var3;
+    document.getElementById("demo").innerHTML = "Your equation is: "+Equation;
+    var answer=var1*var2/var3;
+    document.getElementById("demo1").innerHTML = "Your answer is: "+answer;
+}
+</script>
+</head>
+<body>
+
+<h2>Math Calculator</h2><br><br>
+<select name="operation" id="operation">
+    <option value="simplify">Simplify</option>
+ </select>
+ <input placeholder="1Num" name="text" id="1Num" type="number">
+ <select name="operation1" id="operation1">
+    <option value="*">*</option>
+ </select>
+ <input placeholder="2Num" name="text" id="2Num" type="number">
+ <select name="operation2" id="operation2">
+    <option value="/">/</option>
+ </select>
+ <input placeholder="3Num" name="text" id="3Num" type="number">
+<button type="button" onclick="myFunction()">Submit</button>
+<p id="demo">Your equation is:</p>
+<p id="demo1">Your answer is:</p>
+
+
+
+</body>
+</html> 
